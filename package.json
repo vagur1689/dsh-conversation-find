@@ -1,0 +1,44 @@
+{
+  "name": "dsh-conversation-find",
+  "version": "0.2.1",
+  "description": "In-conversation keyword search with scroll-to-match for the DSH Web GUI: pages the session back to its start first, so a search covers the whole transcript.",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "conversation",
+    "search"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vagur1689/dsh-conversation-find.git"
+  },
+  "scripts": {
+    "test": "node test/smoke.test.js && node test/behaviour.test.js && node test/history.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

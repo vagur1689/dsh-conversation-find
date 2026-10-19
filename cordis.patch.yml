@@ -1,0 +1,7 @@
+# dsh-conversation-find bundle patch
+#
+# Mounts the plugin row. The row name is the package specifier, which is also
+# the client module id the browser bundle registers under.
+- insert:
+    - id: dsh-conversation-find
+      name: 'dsh-conversation-find'
