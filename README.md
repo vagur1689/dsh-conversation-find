@@ -33,22 +33,22 @@
 
 ## 安装
 
-从 GitHub 安装（本仓库根目录即插件包，`link:` 指向克隆下来的目录）：
+直接从 GitHub 装（推荐）：
+
+```bash
+dsh plugin --profile web add github:vagur1689/dsh-conversation-find
+```
+
+然后重启 `dsh web`，再强刷页面（`Cmd + Shift + R`）。
+
+本插件没有 `prepare`/`postinstall` 构建步骤（源码就是可直接加载的 JS），所以**不需要**在 `pnpm-workspace.yaml` 里加 `allowBuilds` 白名单。
+
+要改源码就改用 `link:` 指到克隆目录——`link:` 的好处是改完只需强刷页面，宿主按请求读取 bundle，不必重装：
 
 ```bash
 git clone https://github.com/vagur1689/dsh-conversation-find.git ~/dsh-conversation-find
 dsh plugin --profile web add link:~/dsh-conversation-find
 ```
-
-也可以直接 `link:` 到你自己的任意克隆位置（路径用绝对路径或 `~` 展开后的路径）：
-
-```bash
-dsh plugin --profile web add link:/path/to/dsh-conversation-find
-```
-
-然后重启 `dsh web`，再强刷页面（`Cmd + Shift + R`）。
-
-> 用 `link:` 而不是 npm 安装，是因为本插件尚未发布到 npm；`link:` 的另一个好处是改源码后只需强刷页面即可生效（bundle 由宿主按请求读取）。
 
 ## 使用
 
