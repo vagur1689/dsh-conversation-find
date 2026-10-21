@@ -1,6 +1,11 @@
 # dsh-conversation-find
 
+[![Awesome DSH Plugin](https://img.shields.io/badge/awesome--dsh--plugin-listed-2f81f7)](https://awesome-dsh-plugin.com)
+
 在当前 DSH 会话里按关键词搜索消息，并把命中项**滚动定位**到对话视图中的对应位置。
+
+> 已收录于 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 的 `session` 分类
+> （[列表条目](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/data/plugins/vagur1689__dsh-conversation-find.yml)）。
 
 > 补的是官方 Trajectory 视图缺的那一段：轨迹能搜到内容，但它自己的 README 写明
 > record/timeline selection 是 local 的、**没有 anchor deep links**，所以从轨迹无法跳到
